@@ -17,7 +17,7 @@ function computeGrade(grade){
     } else if (grade >= 86.5){
         console.log("1.75");
     } else if (grade >= 84.5){
-        console.log("1.75");
+        console.log("2");
         }else{
             console.log ("Not within the transmutation")
         }
