@@ -22,4 +22,17 @@ function computeGrade(grade){
             console.log ("Not within the transmutation")
         }
 }
-computeGrade(87);
+computeGrade(85);
+
+function login (username,password){
+    if(username === "shiela"){
+    if(password === "12345"){
+        console.log ("Welcome User");
+    } else {
+        console.log ("Invalid Login Credentials")
+    }
+} else {
+    console.log ("Invalid User");
+}
+}
+login ("shiela",123);
