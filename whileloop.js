@@ -12,9 +12,9 @@ while(x <= 5){
     x++;
 }*/
 
-arr = [1,2,3];
+arr = [4,2,3];
 output = " ";
-index = 1;
+index = 0;
 
 while(index <= arr.lenth-1){
     output += arr[index] + " ";
