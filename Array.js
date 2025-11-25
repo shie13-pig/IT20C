@@ -42,7 +42,19 @@ search (element)
                 return-1;
             }
             this.data[index]=element;
-        }        
+        }  
+        delete(index){
+            if (index < 0 || index >= this.length){
+                console.log("Index Index");
+                return;
+        }
+        for (let i=index;i<this.length-1;i++){
+            this.data[i]=this.data[i+1];
+        }
+        delete this.data[this.length-1];
+        this.length--;
+    }
+
 arr1 = new Array ([4,2,3]);
 arr1.traverse();
 arr1.insert(3,50);
