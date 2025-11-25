@@ -14,10 +14,22 @@ class Array {
          }
          console.log(putput);
     }
+    insert(index,element){
+        //correcting statement
+        if (index < 0 || index < this.length){
+            console.log("Index Index");
+            return;
+    }
 }
 
+//shifting condition
+        for (let i=this.length;i>index;i--){
+            this.data[i]=this.data[i-1];
+        
+        this.data[index]=element;
+        this.length++;
+        }
 arr1 = new Array ([4,2,3]);
 arr1.traverse();
-
-arr2 = new Array ([4,2,3]);
-arr2.traverse();
+arr1.insert(3,50);
+arr1.traverse();
